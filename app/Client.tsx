@@ -26,7 +26,6 @@ export default function Client() {
 
   const generateImage = async (e) => {
     e.preventDefault();
-    // if image === null
     setImage("/default.jpg");
     setLoading(true);
     const res = await fetch(
