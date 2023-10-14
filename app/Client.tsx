@@ -16,8 +16,13 @@ export default function Client() {
     "Tokyo streets, 4k high res, ultra hd, dynamic lighting"
   );
   const handleTagClick = (selectedTags) => {
+    console.log(prompt + " 1")
     setPrompt(selectedTags);
   };
+  const handleOnChange = (e) => {
+    console.log(prompt + " 2")
+    setPrompt(e.target.value);
+  }
   // Japanese mountains, 4k high res, ultra hd, dynamic lighting
   const [loading, setLoading] = useState(false);
   const [image, setImage] = useState("/default.jpg");
@@ -62,8 +67,9 @@ export default function Client() {
                   className="text-sm  min-h-[10rem] md:text-md bg-zinc-900/10 dark:bg-zinc-50/10"
                   placeholder="Type your prompt here to generate image."
                   value={prompt}
-                  onChange={(e) => setPrompt(e.target.value)}
+                  onChange={handleOnChange}
                 />
+                
                 <button
                   type="submit"
                   className="w-fit px-5 py-2 bg-green-600 hover:opacity-70 rounded-full "
@@ -71,7 +77,6 @@ export default function Client() {
                   Generate Image
                 </button>
                 <div>
-                  console.log(prompt)
                   <Tags value={prompt} availableTags={availableTags} onTagClick={handleTagClick} />
                 </div>
               </form>
