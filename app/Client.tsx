@@ -60,21 +60,21 @@ export default function Client() {
         
         h1 {
           margin: auto;
-          font-size: 5.5rem;
           font-weight: 600;
           animation: lights 5s 750ms linear infinite;
         }
 
 
       `}</style>
-      <div className="flex flex-row gap-5">
-        <div className="flex flex-start">
-          <h1 className="">
+      <div className="m-4 flex flex-col md:flex-row gap-5">
+        <div className="my-12 flex flex-col md:flex-row justify-center items-start">
+          <h1 className="text-[2.5rem] md:text-[5.5rem] flex flex-col items-start  md:mr-4 my-4 md:order-1 order-2">
             Create your Own Imaginations using our tools
           </h1>
         </div>
-        <div className="flex flex-start">
-          <video width="900" height="900" loop autoPlay>
+        <div className="flex flex-center md:order-2 order-1">
+          <video loop autoPlay
+          className=" md:w-[400] md:h-[400]">
             <source src="Robo_animated.mp4" type="video/mp4" />
           </video>
           {/* <Image
