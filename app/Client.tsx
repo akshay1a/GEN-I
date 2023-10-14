@@ -71,14 +71,15 @@ export default function Client() {
                   Generate Image
                 </button>
                 <div>
-                  <Tags text={prompt} availableTags={availableTags} onTagClick={handleTagClick} />
+                  console.log(prompt)
+                  <Tags value={prompt} availableTags={availableTags} onTagClick={handleTagClick} />
                 </div>
               </form>
             </div>
           </div>
           <div className=" flex justify-center md:order-2 order-1">
             {loading ? (
-              <Skeleton className="w-[450px] h-[450px] rounded-lg" />
+              <Skeleton className="w-[380px] h-[380px] md:w-[450px] md:h-[450px] rounded-lg" />
             ) : (
               <div>
                   <img 

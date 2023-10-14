@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 
-const Tags = ({ text, availableTags, onTagClick }) => {
-  const [selectedTags, setSelectedTags] = useState([text]);
+export default function Tags({ value, availableTags, onTagClick }){
+  const [selectedTags, setSelectedTags] = useState([value]);
 
   const handleTagClick = (tag) => {
     const newSelectedTags = selectedTags.includes(tag)
@@ -30,4 +30,4 @@ const Tags = ({ text, availableTags, onTagClick }) => {
   );
 };
 
-export default Tags;
+// export default Tags;

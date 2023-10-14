@@ -693,26 +693,38 @@ video {
 .h-\[1\.2rem\] {
   height: 1.2rem;
 }
-.h-\[var\(--radix-navigation-menu-viewport-height\)\] {
-  height: var(--radix-navigation-menu-viewport-height);
-}
-.h-px {
-  height: 1px;
-}
 .h-\[40rem\] {
   height: 40rem;
 }
 .h-\[450px\] {
   height: 450px;
 }
+.h-\[var\(--radix-navigation-menu-viewport-height\)\] {
+  height: var(--radix-navigation-menu-viewport-height);
+}
 .h-full {
   height: 100%;
 }
-.min-h-\[60px\] {
-  min-height: 60px;
+.h-px {
+  height: 1px;
+}
+.h-\[\] {
+  height: ;
+}
+.h-\[400px\] {
+  height: 400px;
+}
+.h-\[350px\] {
+  height: 350px;
+}
+.h-\[380px\] {
+  height: 380px;
 }
 .min-h-\[10rem\] {
   min-height: 10rem;
+}
+.min-h-\[60px\] {
+  min-height: 60px;
 }
 .w-2 {
   width: 0.5rem;
@@ -735,6 +747,13 @@ video {
 .w-\[1\.2rem\] {
   width: 1.2rem;
 }
+.w-\[450px\] {
+  width: 450px;
+}
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .w-full {
   width: 100%;
 }
@@ -742,12 +761,20 @@ video {
   width: -moz-max-content;
   width: max-content;
 }
-.w-\[450px\] {
-  width: 450px;
+.w-\[\] {
+  width: ;
 }
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-\[4--px\] {
+  width: 4--px;
+}
+.w-\[400px\] {
+  width: 400px;
+}
+.w-\[350px\] {
+  width: 350px;
+}
+.w-\[380px\] {
+  width: 380px;
 }
 .min-w-\[8rem\] {
   min-width: 8rem;
@@ -831,14 +858,14 @@ video {
 .gap-3 {
   gap: 0.75rem;
 }
-.gap-6 {
-  gap: 1.5rem;
-}
 .gap-4 {
   gap: 1rem;
 }
 .gap-5 {
   gap: 1.25rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -856,14 +883,14 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-lg {
+  border-radius: var(--radius);
+}
 .rounded-md {
   border-radius: calc(var(--radius) - 2px);
 }
 .rounded-sm {
   border-radius: calc(var(--radius) - 4px);
-}
-.rounded-lg {
-  border-radius: var(--radius);
 }
 .rounded-tl-sm {
   border-top-left-radius: calc(var(--radius) - 4px);
@@ -888,13 +915,17 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
 .border-zinc-200 {
   --tw-border-opacity: 1;
   border-color: rgb(228 228 231 / var(--tw-border-opacity));
 }
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+.bg-green-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 .bg-red-500 {
   --tw-bg-opacity: 1;
@@ -921,10 +952,6 @@ video {
 }
 .bg-zinc-900\/10 {
   background-color: rgb(24 24 27 / 0.1);
-}
-.bg-green-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 .fill-current {
   fill: currentColor;
@@ -977,6 +1004,10 @@ video {
 .pr-2 {
   padding-right: 0.5rem;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -988,10 +1019,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .font-bold {
   font-weight: 700;
@@ -1734,12 +1761,20 @@ video {
     display: none;
   }
 
+  .md\:h-\[450px\] {
+    height: 450px;
+  }
+
   .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\] {
     width: var(--radix-navigation-menu-viewport-width);
   }
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-\[450px\] {
+    width: 450px;
   }
 
   .md\:max-w-\[50rem\] {
@@ -1758,14 +1793,14 @@ video {
     gap: 3rem;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1780,9 +1815,9 @@ video {
 }
 
 
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!../../../../AppData/Roaming/npm/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\layout.tsx","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\layout.tsx","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
   font-family: '__Inter_e66fe9';
