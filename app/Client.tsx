@@ -80,8 +80,8 @@ export default function Client() {
           </h1>
         </div>
         <div className="flex flex-center md:order-2 order-1">
-          <video width={"auto"} loop autoPlay
-          className=" md:w-[400] md:h-[400]">
+          <video width="800" height="800" loop autoPlay
+          >
             <source src="Robo_animated.mp4" type="video/mp4" />
           </video>
           {/* <Image

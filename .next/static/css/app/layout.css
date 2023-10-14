@@ -1778,16 +1778,8 @@ video {
     display: none;
   }
 
-  .md\:h-\[400\] {
-    height: 400;
-  }
-
   .md\:h-\[450px\] {
     height: 450px;
-  }
-
-  .md\:w-\[400\] {
-    width: 400;
   }
 
   .md\:w-\[450px\] {
