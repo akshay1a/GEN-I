@@ -882,6 +882,15 @@ video {
 .rounded-sm {
   border-radius: calc(var(--radius) - 4px);
 }
+.rounded-\[4rem\] {
+  border-radius: 4rem;
+}
+.rounded-\[5rem\] {
+  border-radius: 5rem;
+}
+.rounded-\[3rem\] {
+  border-radius: 3rem;
+}
 .rounded-tl-sm {
   border-top-left-radius: calc(var(--radius) - 4px);
 }

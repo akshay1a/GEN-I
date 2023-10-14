@@ -72,7 +72,7 @@ export default function Client() {
 
 
       `}</style>
-      <div className="main rounded-[7rem] md:rounded-[7rem] p-8 md:p-20 flex flex-col md:flex-row gap-5">
+      <div className="main rounded-[3rem] md:rounded-[7rem] p-8 md:p-20 flex flex-col md:flex-row gap-5">
         <div className=" flex flex-col md:flex-row justify-center items-start">
           <h1 className="text-[2.5rem] md:text-[5.5rem] flex flex-col items-start  md:mr-4 my-4 md:order-1 order-2">
             Create your Own Imaginations using our tools
@@ -89,6 +89,7 @@ export default function Client() {
           className=" rounded-lg shadow-md w-[56rem] h-[auto]"
           width={800}
           height={800}
+          unoptimized={true}
           />
         </div>
       </div>
