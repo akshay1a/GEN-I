@@ -90,7 +90,7 @@ export default function Client() {
                   <img 
                   src={image} 
                   alt={prompt} 
-                  className="rounded-lg border-4 border-white"
+                  className="rounded-lg border-4 border-zinc-950 dark:border-white"
                   height= '450px'
                   width='450px'  
                   />

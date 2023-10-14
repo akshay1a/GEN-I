@@ -19,7 +19,7 @@ export default function Tags({ value, availableTags, onTagClick }){
         <button
           key={tag}
           className={`${
-            selectedTags.includes(tag) ? 'bg-white text-black' : 'bg-black-300 text-white'
+            selectedTags.includes(tag) ? 'bg-zinc-600 text-white dark:bg-zinc-500' : 'dark:bg-black'
           } flex flex-col flex-wrap gap-3 hover:bg-green-900 border-2 border-gray-500 font-bold py-2 px-4 rounded-full border`}
           onClick={() => handleTagClick(tag)}
         >

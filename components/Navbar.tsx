@@ -2,6 +2,7 @@
 "use client"
 
 import Theme from "./Theme";
+import Image from "next/image";
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -20,7 +21,15 @@ export default function Navbar(){
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex-1 md:flex md:items-center md:gap-12">
                         <a className="block text-white-600 dark:text-white-300" href="/">
-                        <span className="text-3xl font-bold">Gen-I</span>
+                        
+                        <span className="pt-2 text-xl font-bold flex">
+                            Gen-I
+                            <Image 
+                            src="/favicon.png"
+                            alt="logo"
+                            width={50}
+                            height={30} />
+                        </span>
                         </a>
                     </div>
 
