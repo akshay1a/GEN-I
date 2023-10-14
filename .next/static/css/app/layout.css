@@ -719,11 +719,50 @@ video {
 .h-px {
   height: 1px;
 }
+.h-\[5rem\] {
+  height: 5rem;
+}
+.h-\[56rem\] {
+  height: 56rem;
+}
+.h-\[full\] {
+  height: full;
+}
+.h-\[80vh\] {
+  height: 80vh;
+}
+.h-\[100vh\] {
+  height: 100vh;
+}
+.h-\[90vh\] {
+  height: 90vh;
+}
+.h-24 {
+  height: 6rem;
+}
+.h-20 {
+  height: 5rem;
+}
+.h-\[1\.rem\] {
+  height: 1.rem;
+}
+.h-\[1\.8rem\] {
+  height: 1.8rem;
+}
+.h-\[2rem\] {
+  height: 2rem;
+}
+.h-5 {
+  height: 1.25rem;
+}
 .min-h-\[10rem\] {
   min-height: 10rem;
 }
 .min-h-\[60px\] {
   min-height: 60px;
+}
+.min-h-full {
+  min-height: 100%;
 }
 .w-2 {
   width: 0.5rem;
@@ -762,6 +801,18 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+.w-\[5rem\] {
+  width: 5rem;
+}
+.w-\[1\.8rem\] {
+  width: 1.8rem;
+}
+.w-\[2rem\] {
+  width: 2rem;
+}
+.w-10 {
+  width: 2.5rem;
 }
 .min-w-\[8rem\] {
   min-width: 8rem;
@@ -854,6 +905,12 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-12 {
+  gap: 3rem;
+}
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
@@ -867,8 +924,8 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
-.rounded-\[7rem\] {
-  border-radius: 7rem;
+.rounded-\[3rem\] {
+  border-radius: 3rem;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -882,14 +939,12 @@ video {
 .rounded-sm {
   border-radius: calc(var(--radius) - 4px);
 }
-.rounded-\[4rem\] {
-  border-radius: 4rem;
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
-.rounded-\[5rem\] {
-  border-radius: 5rem;
-}
-.rounded-\[3rem\] {
-  border-radius: 3rem;
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 .rounded-tl-sm {
   border-top-left-radius: calc(var(--radius) - 4px);
@@ -1031,6 +1086,14 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .font-bold {
   font-weight: 700;
@@ -1788,6 +1851,14 @@ video {
     height: 450px;
   }
 
+  .md\:h-\[\] {
+    height: ;
+  }
+
+  .md\:h-\[80vh\] {
+    height: 80vh;
+  }
+
   .md\:w-\[450px\] {
     width: 450px;
   }
@@ -1814,6 +1885,10 @@ video {
 
   .md\:gap-12 {
     gap: 3rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:rounded-\[7rem\] {

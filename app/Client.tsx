@@ -61,7 +61,6 @@ export default function Client() {
           font: 100% / 1.5 Raleway, sans-serif;
           color: hsl(230, 100%, 95%);
           background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
-          
         }
         
         h1 {
@@ -72,7 +71,7 @@ export default function Client() {
 
 
       `}</style>
-      <div className="main rounded-[3rem] md:rounded-[7rem] p-8 md:p-20 flex flex-col md:flex-row gap-5">
+      <div className="main h-[90vh] md:h-[80vh] rounded-[3rem] md:rounded-[7rem] p-8 md:p-20 flex flex-col md:flex-row gap-12">
         <div className=" flex flex-col md:flex-row justify-center items-start">
           <h1 className="text-[2.5rem] md:text-[5.5rem] flex flex-col items-start  md:mr-4 my-4 md:order-1 order-2">
             Create your Own Imaginations using our tools
@@ -86,7 +85,7 @@ export default function Client() {
           <Image
           src="/robo_animated.gif"
           alt="Robo Animation"
-          className=" rounded-lg shadow-md w-[56rem] h-[auto]"
+          className=" rounded-3xl shadow-md "
           width={800}
           height={800}
           unoptimized={true}
