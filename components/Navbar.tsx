@@ -3,6 +3,7 @@
 
 import Theme from "./Theme";
 import Image from "next/image";
+import Link from "next/link";
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -37,12 +38,12 @@ export default function Navbar(){
                         <nav aria-label="Global" className="hidden md:block">
                         <ul className="flex items-center gap-6 text-sm">
                             <li>
-                            <a
+                            <Link
                                 className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                href="/"
+                                href="/Tools/image-gen"
                             >
                                 Image Generator
-                            </a>
+                            </Link>
                             </li>
 
                             <li>
