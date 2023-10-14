@@ -57,7 +57,14 @@ export default function Client() {
           }
           
         }
-        
+        main {
+          margin: 0;
+          font: 100% / 1.5 Raleway, sans-serif;
+          color: hsl(230, 100%, 95%);
+          background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+          height: 100vh;
+          display: flex;
+        }
         h1 {
           margin: auto;
           font-weight: 600;
@@ -66,14 +73,14 @@ export default function Client() {
 
 
       `}</style>
-      <div className="m-4 flex flex-col md:flex-row gap-5">
+      <div className="m-4 md:mx-12 flex flex-col md:flex-row gap-5">
         <div className="my-12 flex flex-col md:flex-row justify-center items-start">
           <h1 className="text-[2.5rem] md:text-[5.5rem] flex flex-col items-start  md:mr-4 my-4 md:order-1 order-2">
             Create your Own Imaginations using our tools
           </h1>
         </div>
         <div className="flex flex-center md:order-2 order-1">
-          <video loop autoPlay
+          <video width={"auto"} loop autoPlay
           className=" md:w-[400] md:h-[400]">
             <source src="Robo_animated.mp4" type="video/mp4" />
           </video>
