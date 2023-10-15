@@ -86,8 +86,8 @@ export default function Client() {
           src="/robo_animated.gif"
           alt="Robo Animation"
           className=" rounded-3xl shadow-md "
-          width={800}
-          height={800}
+          width={900}
+          height={900}
           unoptimized={true}
           />
         </div>

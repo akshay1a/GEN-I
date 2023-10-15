@@ -42,7 +42,7 @@ export default function Navbar(){
                                 className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                                 href="/Tools/image-gen"
                             >
-                                Image Generator
+                                AI Image Generator
                             </Link>
                             </li>
 
@@ -58,9 +58,9 @@ export default function Navbar(){
                         </nav>
 
                         <div className="flex items-center">
-                            <div className="sm:flex sm:gap-4">
+                            <div className="sm:flex gap-4">
                                 <div
-                                className="rounded-md bg-white-600 px-5 py-1 font-medium text-white dark:hover:bg-white-500">
+                                className="rounded-md pt-2 bg-white-600 px-2 md:px-1 font-medium text-white dark:hover:bg-white-500">
                                 <Theme />
                                 </div>
                             </div>
@@ -92,7 +92,7 @@ export default function Navbar(){
                                     <DropdownMenuSeparator />
                                     <Link href="/Tools/image-gen">
                                         <DropdownMenuItem>
-                                            Image Generator
+                                            AI Image Generator
                                         </DropdownMenuItem>
                                     </Link>
                                     <DropdownMenuItem>

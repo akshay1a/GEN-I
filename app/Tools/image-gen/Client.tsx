@@ -50,10 +50,17 @@ export default function Client() {
   };
 
   return (
-    <main className="m-4 md:m-10 ">
-      <div className="flex flex-col gap-4 md:gap-12">
-        <div className="text-2xl md:text-4xl font-bold flex flex-col justify-start items-center mt-8">
-          Image Generator
+    <main className="m-4 md:m-4 ">
+      <style jsx>{`
+      .main {
+        font: 100% / 1.5 Raleway, sans-serif;
+        color: hsl(230, 100%, 95%);
+        background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+      }
+      `}</style>
+      <div className="main rounded-xl p-6 flex flex-col gap-4 md:gap-12">
+        <div className="text-2xl md:text-4xl font-bold flex flex-col justify-start items-center ">
+          AI Image Generator
         </div>
         <div className="flex flex-col md:flex-row justify-center items-start">
           <div className="flex flex-col items-start  md:mr-4 mt-4 md:order-1 order-2">
@@ -62,7 +69,7 @@ export default function Client() {
                 onSubmit={generateImage}
                 className="p-1 flex flex-col h-full gap-5 items-start h-[40rem] md:max-w-[50rem] "
               >
-                <Label htmlFor="label">Your Prompt!</Label>
+                <Label htmlFor="label">Write your Prompt!</Label>
                 <Textarea
                   className="text-sm  min-h-[10rem] md:text-md bg-zinc-900/10 dark:bg-zinc-50/10"
                   placeholder="Type your prompt here to generate image."
@@ -74,7 +81,7 @@ export default function Client() {
                   type="submit"
                   className="w-fit px-5 py-2 bg-green-600 hover:opacity-70 rounded-full "
                 >
-                  Generate Image
+                  Generate
                 </button>
                 <div>
                   <Tags value={prompt} availableTags={availableTags} onTagClick={handleTagClick} />
