@@ -1,10 +1,27 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 export default function Client() {
 
-   
+
+  const textToType = "Create your Own Imaginations using our tools"; // The text you want to type
+
+  const typeText = (index) => {
+    const typingTextElement = document.getElementById('typing-text');
+    typingTextElement.textContent = textToType.slice(0, index);
+
+    if (index < textToType.length) {
+      setTimeout(() => {
+        typeText(index + 1);
+      }, 80); // Adjust typing speed (milliseconds)
+    }
+  };
+
+  useEffect(() => {
+    typeText(0);
+  }, []);
+  
 
 
   return (
@@ -74,20 +91,16 @@ export default function Client() {
       <div className="main h-[90vh] md:h-[80vh] rounded-[3rem] md:rounded-[7rem] p-8 md:p-20 flex flex-col md:flex-row gap-12">
         <div className=" flex flex-col md:flex-row justify-center items-start">
           <h1 className="text-[2.5rem] md:text-[5.5rem] flex flex-col items-start  md:mr-4 my-4 md:order-1 order-2">
-            Create your Own Imaginations using our tools
+          <span id="typing-text" className="min-h-[300px] md:min-w-[800px]"></span>
           </h1>
         </div>
-        <div className="flex flex-center md:order-2 order-1">
-          {/* <video width="800" height="800" loop autoPlay
-          >
-            <source src="Robo_animated.mp4" type="video/mp4" />
-          </video> */}
+        <div className="flex flex-end md:order-2 order-1 w-full ">
           <Image
           src="/robo_animated.gif"
           alt="Robo Animation"
-          className=" rounded-3xl shadow-md "
-          width={900}
-          height={900}
+          className="rounded-3xl shadow-md "
+          width={400}
+          height={400}
           unoptimized={true}
           />
         </div>

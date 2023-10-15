@@ -18,18 +18,90 @@ import {
 export default function Navbar(){
     return (
         <header className="bg-white dark:bg-black sticky inset-0 z-50 w-full border-b-2 border-black dark:border-b dark:border-white">
+            <style>{`
+            .img {
+                animation: driftAnimation 1.5s infinite alternate;
+                animation-iteration-count: 1;
+            }
+            .gen {
+                text-shadow: 0 0 10px rgba(255, 0, 150, 10);
+                animation: fadein 1.5s infinite;
+                animation-iteration-count: 1;
+            }
+            
+            @keyframes driftAnimation {
+                0% {
+                  transform: translateX(-100px) translateY(-10px);
+                }
+                40% {
+                  transform: translateX(5px); /* Adjust the drift distance as needed */
+                }
+                70% {
+                  transform: translateX(0);
+                }
+                80% {
+                    opacity: 1;
+                    text-shadow: 0 0 10px rgba(255, 0, 150, 0.8);
+                }
+                90% {
+                  opacity: 0;
+                  text-shadow: 0 0 10px rgba(255, 0, 150, 0.8); /* Neon color and glow */
+                }
+                95% {
+                  opacity: 1;
+                  text-shadow: 0 0 20px rgba(255, 0, 150, 0.9); /* Increase glow at midpoint */
+                }
+                98% {
+                  opacity: 0;
+                  text-shadow: 0 0 10px rgba(255, 0, 150, 0.8); /* Return to initial state */
+                }                
+                100% {
+                  opacity: 1;
+                  text-shadow: 0 0 20px rgba(255, 0, 150, 0.9); /* Increase glow at midpoint */
+                }
+            }
+
+            @keyframes fadein {
+                0% {
+                  opacity: 0;
+                  text-shadow: 0 0 10px rgba(255, 0, 150, 0.8); /* Neon color and glow */
+                }
+                90% {
+                  opacity: 0;
+                  text-shadow: 0 0 20px rgba(255, 0, 150, 0.9); /* Increase glow at midpoint */
+                }
+                95% {
+                  opacity: 1;
+                  text-shadow: 0 0 10px rgba(255, 0, 150, 1); /* Return to initial state */
+                }
+                98% {
+                  opacity: 0;
+                  text-shadow: 0 0 10px rgba(255, 0, 150, 2); /* Neon color and glow */
+                }
+                100% {
+                  opacity: 1;
+                  text-shadow: 0 0 10px rgba(255, 0, 150, 1); /* Return to initial state */
+                }
+            }
+            
+
+            `}</style>
             <div className="mx-auto max-w-screen px-4 sm:px-6 lg:px-8">
                 <div className="flex h-20 items-center justify-between">
                     <div className="flex-1 md:flex md:items-center md:gap-12">
                         <a className="block text-white-600 dark:text-white-300" href="/">
                         
                         <span className="pt-2 text-2xl font-bold flex">
+                            <div className="gen">
                             Gen-I
+                            </div>
+                            <div className="img">
                             <Image 
                             src="/robo.png"
                             alt="logo"
                             width={50}
                             height={30} />
+                            </div>
                         </span>
                         </a>
                     </div>
