@@ -21,8 +21,8 @@ export default function Theme() {
     // <DropdownMenu>
     //   <DropdownMenuTrigger asChild>
         <Button variant="outline" size="lg" onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")}>
-          <SunIcon className="absolute h-11 w-11 md:h-8 md:w-8 text-black rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <MoonIcon className="absolute h-11 w-11 md:h-8 md:w-8 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <SunIcon className="absolute h-9 w-9 md:h-8 md:w-8 text-black rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <MoonIcon className="absolute h-9 w-9 md:h-8 md:w-8 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           {/* <span className="sr-only">Toggle theme</span> */}
         </Button>
     //   </DropdownMenuTrigger>

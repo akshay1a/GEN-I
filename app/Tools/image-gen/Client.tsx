@@ -58,20 +58,20 @@ export default function Client() {
         background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
       }
       `}</style>
-      <div className="main rounded-xl p-6 flex flex-col gap-4 md:gap-12">
-        <div className="text-2xl md:text-4xl font-bold flex flex-col justify-start items-center ">
+      <div className="main rounded-xl p-6 flex flex-col gap-4 md:gap-8 md:mx-20 mt-8">
+        <div className="text-2xl md:text-3xl font-bold flex flex-col justify-start items-center ">
           AI Image Generator
         </div>
         <div className="flex flex-col md:flex-row justify-center items-start">
           <div className="flex flex-col items-start  md:mr-4 mt-4 md:order-1 order-2">
-            <div className="">
+            <div>
               <form
                 onSubmit={generateImage}
                 className="p-1 flex flex-col h-full gap-5 items-start h-[40rem] md:max-w-[50rem] "
               >
                 <Label htmlFor="label">Write your Prompt!</Label>
                 <Textarea
-                  className="text-sm  min-h-[10rem] md:text-md bg-zinc-900/10 dark:bg-zinc-50/10"
+                  className="text-sm dark:border-white min-h-[10rem] md:text-md bg-zinc-900/10 dark:bg-zinc-50/10"
                   placeholder="Type your prompt here to generate image."
                   value={prompt}
                   onChange={handleOnChange}
@@ -97,7 +97,7 @@ export default function Client() {
                   <img 
                   src={image} 
                   alt={prompt} 
-                  className="rounded-lg border-4 border-zinc-950 dark:border-white"
+                  className="rounded-lg border-2 border-zinc-950 border-white"
                   height= '450px'
                   width='450px'  
                   />
