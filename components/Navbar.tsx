@@ -26,7 +26,7 @@ export default function Navbar(){
                         <span className="pt-2 text-2xl font-bold flex">
                             Gen-I
                             <Image 
-                            src="/favicon.png"
+                            src="/robo.png"
                             alt="logo"
                             width={50}
                             height={30} />
