@@ -72,7 +72,8 @@ export default function Client() {
               >
                 <Label htmlFor="label">Write your Prompt!</Label>
                 <Textarea
-                  className="text-sm dark:border-white min-h-[8rem] min-w-[20rem] md:min-w-[45rem] md:text-md bg-zinc-900/10 dark:bg-zinc-50/10"
+                  rows={4}
+                  className="text-sm dark:border-white min-w-[300px] md:min-w-[45rem] md:text-md bg-zinc-900/10 dark:bg-zinc-50/10"
                   placeholder="Type your prompt here to generate image."
                   value={prompt}
                   onChange={handleOnChange}
