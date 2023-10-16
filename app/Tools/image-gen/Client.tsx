@@ -6,21 +6,22 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Tags from '@/components/Tags';
 
-const availableTags = ['4k high res', 'ultra hd', 'blurry', 
-'dynamic lighting', 'neon', 'animated', 'realistic', 'cartoon',
-'3d animated', 'cyberpunk', 'grayscale', 'nostalgic', 'streets',
-'foggy', 'rainy', 'mountains', 'public', 'crowded', 'quiet']; 
+
 
 export default function Client() {
   const [prompt, setPrompt] = useState(
     "Tokyo streets, 4k high res, ultra hd, dynamic lighting"
   );
+  const availableTags = ['4k high res', 'ultra hd', 'blurry', 
+'dynamic lighting', 'neon', 'animated', 'realistic', 'cartoon',
+'3d animated', 'cyberpunk', 'grayscale', 'nostalgic', 'streets',
+'foggy', 'rainy', 'mountains', 'public', 'crowded', 'quiet'
+]; 
+
   const handleTagClick = (selectedTags) => {
-    console.log(prompt + " 1")
     setPrompt(selectedTags);
   };
   const handleOnChange = (e) => {
-    console.log(prompt + " 2")
     setPrompt(e.target.value);
   }
   // Japanese mountains, 4k high res, ultra hd, dynamic lighting
@@ -71,7 +72,7 @@ export default function Client() {
               >
                 <Label htmlFor="label">Write your Prompt!</Label>
                 <Textarea
-                  className="text-sm dark:border-white min-h-[10rem] md:text-md bg-zinc-900/10 dark:bg-zinc-50/10"
+                  className="text-sm dark:border-white min-h-[8rem] min-w-[20rem] md:min-w-[45rem] md:text-md bg-zinc-900/10 dark:bg-zinc-50/10"
                   placeholder="Type your prompt here to generate image."
                   value={prompt}
                   onChange={handleOnChange}
@@ -84,14 +85,14 @@ export default function Client() {
                   Generate
                 </button>
                 <div>
-                  <Tags value={prompt} availableTags={availableTags} onTagClick={handleTagClick} />
+                  {/* <Tags value={prompt} availableTags={availableTags} onTagClick={handleTagClick} /> */}
                 </div>
               </form>
             </div>
           </div>
           <div className=" flex justify-center md:order-2 order-1">
             {loading ? (
-              <Skeleton className="w-[380px] h-[380px] md:w-[450px] md:h-[450px] rounded-lg" />
+              <Skeleton className="w-[330px] h-[330px] md:w-[450px] md:h-[450px] rounded-lg" />
             ) : (
               <div>
                   <img 
